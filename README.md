@@ -11,7 +11,7 @@ This project implements an in-memory database (`InMemoryDB`) with several method
 
 ### Methods Implemented
 
-#### 1. SET_OR_INC(key: string, column: string, value: any): void
+#### 1. SET_OR_INC
 
 - **Purpose**: This method sets or increments a column value for a given key.
 - **Parameters**:
@@ -22,7 +22,7 @@ This project implements an in-memory database (`InMemoryDB`) with several method
   - If the `key` exists in the database, it checks if the `column` already exists. If it does, it increments its value by `value`. If not, it sets the column to `value`.
   - If the `key` does not exist, it creates a new entry with the specified `column` and `value`.
 
-#### 2. GET(key: string): any
+#### 2. GET
 
 - **Purpose**: Retrieves the entire set of columns and their values for a given key.
 - **Parameters**:
@@ -31,7 +31,7 @@ This project implements an in-memory database (`InMemoryDB`) with several method
 - **Behavior**:
   - Retrieves all columns and their corresponding values stored under the specified `key` in the database.
 
-#### 3. DELETE(key: string, column?: string): boolean
+#### 3. DELETE
 
 - **Purpose**: Deletes either the entire key or a specific column under the key.
 - **Parameters**:
@@ -43,7 +43,7 @@ This project implements an in-memory database (`InMemoryDB`) with several method
   - If both `key` and `column` are provided, deletes the specified `column` under the `key`.
   - Returns `true` if deletion is successful, `false` if the `key` or `column` does not exist in the database.
 
-#### 4. TOP_N_KEYS(count: number): string[]
+#### 4. TOP_N_KEYS
 
 - **Purpose**: Returns the top `<count>` keys with the highest number of columns set in the database.
 - **Parameters**:
