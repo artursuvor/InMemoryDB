@@ -1,4 +1,3 @@
-Certainly! Here's a more detailed description of each method implemented in the `InMemoryDB` project:
 
 ---
 
